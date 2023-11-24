@@ -7,10 +7,61 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        unbounded: ["Unbounded", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      colors: {
+				"red-blood": "#CD3E3E",
+				"almost-black": "#0A0A0A",
+				"almost-white": "#F5F5F5",
+        "lavender-blue": "#C3C1FE"
+			},
+      animation: {
+        toLeft: "moveLeft 5s infinite linear",
+        toRight: "moveRight 5s infinite linear",
+        popUp: "popUp 0.2s ease-in forwards",
+        popUpReverse: "popUpReverse 0.2s ease-in forwards",
+      },
+      keyframes: {
+        moveLeft: {
+          "0%": {
+            transform: "translateX(100%)",
+          },
+          "100%": {
+            transform: "translateX(-100%)",
+          },
+        },
+        moveRight: {
+          "0%": {
+            transform: "translateX(-100%)",
+          },
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+        popUp: {
+          "0%": {
+            transform: "translateX(0%) translateY(0%)",
+          },
+          "50%": {
+            transform: "translateX(-2%) translateY(-4%)",
+          },
+          "100%": {
+            transform: "translateX(-1%) translateY(-2%)",
+          },
+        },
+        popUpReverse: {
+          "0%": {
+            transform: "translateX(-1%) translateY(-2%)",
+          },
+          "50%": {
+            transform: "translateX(-2%) translateY(-4%)",
+          },
+          "100%": {
+            transform: "translateX(0%) translateY(0%)",
+          },
+        },
       },
     },
   },
