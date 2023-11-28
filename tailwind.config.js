@@ -11,11 +11,15 @@ module.exports = {
         unbounded: ["Unbounded", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      backgroundImage: {
+        circle: "url('/circle.svg')",
+      },
       colors: {
 				"red-blood": "#CD3E3E",
 				"almost-black": "#0A0A0A",
 				"almost-white": "#F5F5F5",
-        "lavender-blue": "#C3C1FE"
+        "lavender-blue": "#C3C1FE",
+        "somewhat-green": "#309F3A",
 			},
       animation: {
         toLeft: "moveLeft 5s infinite linear",

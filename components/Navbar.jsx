@@ -11,7 +11,7 @@ const Navbar = () => {
             </div>
             <ul className='font-montserrat regular-18 flex flex-row gap-12'>
                 {navbar.map((link) => (
-                    <Link href={link.href} key={link.key}>
+                    <Link href={link.href} key={link.key} className='hover:bg-circle hover:bg-no-repeat'>
                         {link.label}
                     </Link>
                 ))}
