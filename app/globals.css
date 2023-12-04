@@ -14,7 +14,7 @@
 @layer utilities {
   .big-stroke {
     @apply text-[128px] font-[900] text-transparent overflow-hidden;
-    -webkit-text-stroke: 2px #CD3E3E;
+    -webkit-text-stroke: 2px #cd3e3e;
   }
 
   .regular-64 {
@@ -58,7 +58,7 @@
   }
 
   .bold-128 {
-    @apply text-[128px] font-[900] tracking-[0.15em] ;
+    @apply text-[128px] font-[900] tracking-[0.15em];
   }
 
   .bold-88 {

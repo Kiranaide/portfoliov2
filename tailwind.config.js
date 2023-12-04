@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -15,12 +15,14 @@ module.exports = {
         circle: "url('/circle.svg')",
       },
       colors: {
-				"red-blood": "#CD3E3E",
-				"almost-black": "#0A0A0A",
-				"almost-white": "#F5F5F5",
+        "red-blood": "#CD3E3E",
+        "almost-black": "#0A0A0A",
+        "almost-white": "#F5F5F5",
         "lavender-blue": "#C3C1FE",
-        "somewhat-green": "#309F3A",
-			},
+        "red-ruby": "#802626",
+        "somewhat-green": "#008A21",
+        "somewhat-blue": "#007CFF",
+      },
       animation: {
         toLeft: "moveLeft 5s infinite linear",
         toRight: "moveRight 5s infinite linear",
@@ -70,4 +72,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
