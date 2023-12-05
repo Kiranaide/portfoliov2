@@ -13,7 +13,8 @@ const Skill = () => {
             src={tech.image}
             key={tech.name}
             alt={tech.name}
-            width={48}
+            width={64}
+            height={64}
             className="w-auto h-12 sm:h-16"
           />
         ))}
