@@ -5,7 +5,7 @@ import { navbar } from "@/lib/utils";
 
 const Footer = () => {
   return (
-    <div className="mx-auto max-w-[1440px] mt-32 mb-16 space-y-8">
+    <div className="mx-4 sm:mx-auto max-w-[1440px] mt-24 mb-8 sm:mt-32 sm:mb-16 space-y-8">
       <div className="flex flex-row items-center justify-center gap-8">
         {navbar.map((link) => (
           <Link href={link.href} key={link.key} target="_blank">

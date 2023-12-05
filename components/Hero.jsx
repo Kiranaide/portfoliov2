@@ -7,13 +7,13 @@ const HeroSection1 = ({ backgroundImage }) => {
     backgroundImage: `url(${backgroundImage})`,
   };
   return (
-    <div style={bg} className={`bg-cover w-1/2 h-full min-h-[85vh]`}></div>
+    <div style={bg} className={`bg-cover w-1/2 h-full min-h-[50vh] sm:min-h-[85vh]`}></div>
   );
 };
 
 const Hero = () => {
   return (
-    <div className="mx-auto max-w-[1440px] mt-8 mb-16">
+    <div className="mx-auto max-w-lg sm:max-w-[1440px] mt-4 mb-8 sm:mt-8 sm:mb-16">
       <div className="w-full h-full font-montserrat flex flex-row">
         <HeroSection1 backgroundImage="/heroimg.jpg" />
         <ul className="text-red-blood regular-20 w-1/2 flex flex-col gap-1 items-end justify-end p-16">
@@ -35,7 +35,7 @@ const Hero = () => {
           className="absolute inset-0 flex justify-center items-center max-h-screen"
           style={{ pointerEvents: "none" }}
         >
-          <h1 className="font-unbounded uppercase text-red-blood bold-128 text-center">
+          <h1 className="font-unbounded uppercase text-red-blood text-7xl font-bold sm:bold-128 text-center ">
             kiranaide
           </h1>
         </div>
