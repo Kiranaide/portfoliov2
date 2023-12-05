@@ -1,5 +1,5 @@
 import React from "react";
-import { expSkill } from "@/lib/utils";
+// import { expSkill } from "@/lib/utils";
 import Type from "./Type";
 
 const HeroSection1 = ({ backgroundImage }) => {
@@ -7,7 +7,7 @@ const HeroSection1 = ({ backgroundImage }) => {
     backgroundImage: `url(${backgroundImage})`,
   };
   return (
-    <div style={bg} className={`bg-cover w-1/2 h-full min-h-[50vh] sm:min-h-[85vh]`}></div>
+    <div style={bg} className={`bg-cover w-1/2 h-full min-h-[85vh]`}></div>
   );
 };
 
@@ -16,7 +16,7 @@ const Hero = () => {
     <div className="mx-auto max-w-lg sm:max-w-[1440px] mt-4 mb-8 sm:mt-8 sm:mb-16">
       <div className="w-full h-full font-montserrat flex flex-row">
         <HeroSection1 backgroundImage="/heroimg.jpg" />
-        <ul className="text-red-blood regular-20 w-1/2 flex flex-col gap-1 items-end justify-end p-16">
+        <ul className="text-red-blood regular-20 w-1/2 flex flex-col gap-1 items-end justify-end p-8 sm:p-16">
           {/* <Typewriter text="front-end developer." delay={100} infinity /> */}
           {/* {expSkill.map((link) => (
                     <li key={link.skill}>{link.skill}</li>

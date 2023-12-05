@@ -24,7 +24,7 @@ const About = () => {
             width={128}
             height={128}
             alt="star"
-            className="absolute -top-6 -left-6 sm:-top-14 sm:-left-14 w-16 h-16 sm:w-full sm:h-full"
+            className="absolute -top-6 -left-6 sm:-top-14 sm:-left-14 w-16 h-16 sm:w-32 sm:h-32"
           />
           <h5 className="bold-16 sm:bold-32">About Me</h5>
           <p className="regular-14 sm:regular-24">

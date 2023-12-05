@@ -4,8 +4,7 @@ import { expSkill } from "@/lib/utils";
 import Typewriter from "typewriter-effect";
 
 const Type = () => {
-  const data = expSkill.map((data) => data.skill);
-  console.log(data);
+  const data = expSkill.map((data) => data.skill)
   return (
     <>
       <Typewriter options={{
