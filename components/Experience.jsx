@@ -1,6 +1,7 @@
 import { experience } from "@/lib/utils";
 import React from "react";
 import Image from "next/image";
+import { unbounded } from "@/app/layout";
 
 const DateExperience = (timeStamp) => {
   const date = new Date(timeStamp);
@@ -10,15 +11,15 @@ const DateExperience = (timeStamp) => {
 const Experience = () => {
   return (
     <div className="mx-4 sm:mx-auto max-w-[1440px]">
-      <div className="w-full h-full font-montserrat flex flex-col items-center justify-center my-16 space-y-8">
-        <h1 className="font-unbounded text-red-blood bold-40 sm:bold-64 text-center">
+      <div className="w-full h-full flex flex-col items-center justify-center my-16 space-y-8">
+        <h1 className={`${unbounded.className} text-red-blood bold-40 sm:bold-64 text-center`}>
           Work Experience
         </h1>
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-between">
           {experience.map((list) => (
             <div
               key={list.name}
-              className="flex flex-col items-center text-center space-y-1 bg-red-ruby text-almost-white rounded-2xl max-w-lg p-4"
+              className="flex flex-col items-center text-center space-y-1 bg-red-ruby text-almost-white max-w-lg p-4"
             >
               <Image alt={list.name} src={list.image} width={64} height={64} />
               <h2 className="bold-16 sm:bold-20">{list.name}</h2>

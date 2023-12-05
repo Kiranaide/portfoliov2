@@ -1,5 +1,16 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import { Unbounded, Montserrat } from '@next/font/google'
+
+export const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400','500','700'],
+})
+
+export const unbounded = Unbounded({
+  subsets: ['latin'],
+  weight: ['600','800','900']
+})
 
 export const metadata = {
   title: "Kiranaide",
@@ -9,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative bg-almost-white mx-auto">
+      <body className={`${montserrat.className} relative bg-almost-white mx-auto`}>
         <Navbar />
         {children}
       </body>

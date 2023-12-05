@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        unbounded: ["Unbounded", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        unbounded: ['--var(--font-unbounded)'],
+        montserrat: ['--var(--font-montserrat)'],
       },
       backgroundImage: {
         circle: "url('/circle.svg')",
