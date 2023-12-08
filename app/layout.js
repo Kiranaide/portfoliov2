@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Unbounded, Montserrat } from '@next/font/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const montserrat = Montserrat({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
       </body>
+      <SpeedInsights />
     </html>
   );
 }
