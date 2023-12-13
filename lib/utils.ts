@@ -46,7 +46,7 @@ export const experience = [
     name: "CV. Mediatama Web Indonesia",
     start: new Date().setFullYear(2023, 8, 23),
     end: "",
-    jobs: "Front-End Developer (Intern)",
+    jobs: "Front-End Developer (Contract)",
     image: "/images/experience/mediatama.jpeg",
     doing:
       "Crafting visually appealing websites with a strong emphasis on design aesthetics, ensuring they remain responsive and fully functional. Bringing creativity and technical expertise together to deliver seamless and engaging user experiences.",
