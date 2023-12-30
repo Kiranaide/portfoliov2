@@ -13,8 +13,17 @@ const Navbar = () => {
         </div>
         <ul className="regular-18 flex flex-row gap-4 sm:gap-6">
           {navbar.map((link) => (
-            <Link href={link.href} key={link.key} target="_blank" className="w-6 h-6 sm:w-full sm:h-full">
-              <Image src={link.image} alt={link.label} width={32} height={32} />
+            <Link
+              href={link.href}
+              key={link.key}
+              target="_blank"
+              className="w-6 h-6 sm:w-full sm:h-full">
+              <Image
+                src={link.image}
+                alt={link.label}
+                width={32}
+                height={32}
+              />
             </Link>
           ))}
         </ul>
