@@ -32,7 +32,7 @@ const Navbar = () => {
             </Link>
           ))}
           <button
-            className="whitespace-nowrap p-4 border border-red-blood hover:bg-red-blood hover:text-white transition-colors duration-200"
+            className="whitespace-nowrap py-2 px-4 border border-red-blood hover:bg-red-blood hover:text-white transition-colors duration-200"
             onClick={() => router.push(redirectLink[0].link)}>
             {redirectLink[0].name}
           </button>
