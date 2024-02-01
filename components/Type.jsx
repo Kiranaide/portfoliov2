@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 const Type = () => {
   const data = expSkill.map((data) => data.skill);
   return (
-    <>
+    <div>
       <Typewriter
         options={{
           strings: data,
@@ -16,7 +16,7 @@ const Type = () => {
           delay: 50,
         }}
       />
-    </>
+    </div>
   );
 };
 

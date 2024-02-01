@@ -78,3 +78,10 @@ export const education = [
     department: "Software Engineering",
   },
 ];
+
+export const redirectLink = [
+  {
+    name: "CV",
+    link: "https://drive.google.com/file/d/1wE8GjrY-9EWH4c90hFOyxJaE1cxAORu6/view?usp=sharing",
+  },
+];
