@@ -4,11 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { unbounded } from "@/app/layout";
 import { redirectLink } from "@/lib/utils";
-import { useRouter } from "next/navigation";
 
 const Navbar = () => {
-  const router = useRouter();
-
   return (
     <div className="mx-4 sm:mx-auto max-w-lg sm:max-w-[1440px]">
       <nav className="my-8 text-red-blood flex flex-row items-center justify-between">
@@ -30,11 +27,11 @@ const Navbar = () => {
               />
             </Link>
           ))}
-          <button
-            className="whitespace-nowrap py-2 px-4 border border-red-blood hover:bg-red-blood hover:text-white transition-colors duration-200"
-            onClick={() => router.push(redirectLink[0].link)}>
+          <a
+            href={redirectLink[0].link}
+            className="whitespace-nowrap py-2 px-4 border border-red-blood hover:bg-red-blood hover:text-white transition-colors duration-200">
             {redirectLink[0].name}
-          </button>
+          </a>
         </ul>
       </nav>
     </div>
