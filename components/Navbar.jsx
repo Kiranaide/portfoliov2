@@ -1,4 +1,3 @@
-"use client";
 import { navbar } from "@/lib/utils";
 import React from "react";
 import Link from "next/link";
