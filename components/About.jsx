@@ -11,7 +11,8 @@ const About = () => {
             className={`big-stroke whitespace-nowrap ${
               index % 2 === 0 ? "animate-toLeft" : "animate-toRight"
             }`}
-            key={list.skill}>
+            key={list.skill}
+          >
             {`${list.skill} ${list.skill}`}
           </p>
         ))}

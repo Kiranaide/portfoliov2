@@ -19,9 +19,11 @@ const Hero = () => {
         </ul>
         <div
           className="absolute inset-0 flex justify-center items-center max-h-[60vh] sm:max-h-screen"
-          style={{ pointerEvents: "none" }}>
+          style={{ pointerEvents: "none" }}
+        >
           <h1
-            className={`${unbounded.className} uppercase text-red-blood text-5xl font-black sm:bold-128 text-center`}>
+            className={`${unbounded.className} uppercase text-red-blood text-5xl font-black sm:bold-128 text-center`}
+          >
             kiranaide
           </h1>
         </div>
