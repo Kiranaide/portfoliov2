@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${montserrat.className} relative bg-almost-white mx-auto`}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
       <SpeedInsights />
