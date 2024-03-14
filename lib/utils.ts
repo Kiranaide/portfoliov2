@@ -88,4 +88,8 @@ export const redirectLink = [
     name: "Modul Office",
     link: "https://hisaki.s-ul.eu/zfbFZ82Q",
   },
+  {
+    name: "HTML",
+    link: "https://hisaki.s-ul.eu/8t2DmohN",
+  },
 ];
