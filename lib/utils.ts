@@ -92,4 +92,8 @@ export const redirectLink = [
     name: "HTML",
     link: "https://hisaki.s-ul.eu/8t2DmohN",
   },
+  {
+    name: "CSS",
+    link: "https://hisaki.s-ul.eu/hk8q7n3r",
+  },
 ];
