@@ -12,10 +12,12 @@ const Experience = () => {
   return (
     <div className="mx-4 sm:mx-auto max-w-[1440px]">
       <div className="w-full h-full flex flex-col items-center justify-center my-16 space-y-8">
-        <h1 className={`${unbounded.className} text-red-blood bold-40 sm:bold-64 text-center`}>
+        <h1
+          className={`${unbounded.className} text-red-blood bold-40 sm:bold-64 text-center`}
+        >
           Work Experience
         </h1>
-        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-between">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-between">
           {experience.map((list) => (
             <div
               key={list.name}
@@ -24,7 +26,7 @@ const Experience = () => {
               <Image alt={list.name} src={list.image} width={64} height={64} />
               <h2 className="bold-16 sm:bold-20">{list.name}</h2>
               <h4 className="font-regular text-xs">
-                {DateExperience(list.start)} - {" "}
+                {DateExperience(list.start)} -{" "}
                 {list.end ? DateExperience(list.end) : "Present"}
               </h4>
               <h3 className="medium-14 sm:medium-16">{list.jobs}</h3>
