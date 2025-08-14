@@ -15,8 +15,8 @@ const Footer = () => {
       </div>
       <div className="flex items-center justify-center">
         <h5 className="text-lg font-normal text-center">
-          © 2023 - <span className="font-medium">Sakti Abdullah Shidiq</span> /
-          Kiranaide
+          © {new Date().getFullYear()} -{" "}
+          <span className="font-medium">Sakti Abdullah Shidiq</span> / Kiranaide
         </h5>
       </div>
     </div>
